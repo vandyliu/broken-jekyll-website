@@ -1,0 +1,51 @@
+# Build settings
+permalink: /blog/:year/:title/
+markdown: kramdown
+highlighter: pygments.rb
+plugins: [jekyll-paginate-v2]
+
+pagination:
+  enabled: true
+  per_page: 3
+  permalink: "/page/:num/"
+
+comments: true
+
+source: source
+destination: _site
+sass:
+  sass_dir: _sass
+  style: compressed # expanded
+
+# SEO settings
+title: Vandy Liu
+description: ""
+keywords: "vandy, liu, vandy liu, blog, computers, computer science, ubc"
+url: vandyliu.github.io
+baseurl: ""
+
+repo: http://github.com/vandyliu/website
+
+# Author settings
+author:
+  name: Vandy Liu
+  bio: "A computer science student who enjoys doing stuff with computers"
+  extrabio: "and who needs to change this text in the future."
+  thumb: /images/author.png
+  email: mailto:vandyliu@alumni.ubc.ca
+  url: https://vandyliu.github.io
+  github: https://github.com/vandyliu
+  linkedin: https://linkedin.com/in/vandy-liu
+  resume: /images/resume.pdf
+
+# navbar pages
+navbar:
+  - slug: about
+    title: About
+  - slug: blog
+    title: Blog
+  - slug: projects
+    title: Projects  
+  - slug: resume
+    title: Resume
+exclude: ["config.rb", "src", "Gemfile", "Gemfile.lock", "package.json","README.md", "Rakefile"]

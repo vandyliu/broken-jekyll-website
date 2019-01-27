@@ -1,0 +1,15 @@
+---
+layout: pages
+title: Projects
+pagination:
+  enabled: true
+---
+
+<section class="post-list">
+  {% for post in site.posts %}
+   {% if post.projects %}
+      {% include article.html %}
+   {% endif %}
+  {% endfor %}
+
+</section>
